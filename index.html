@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Cotizador - Smart Tree</title>
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" integrity="sha384-2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="fontawesome/css/font-awesome.min.css">
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script src="https://www.atlasestateagents.co.uk/javascript/tether.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js" integrity="sha384-VjEeINv9OSwtWFLAtmc4JCtEJXXBub00gtSnszmspDLCtC0I4z4nqz7rEFbIZLLU" crossorigin="anonymous"></script>
+	<script src="main.js"></script>
+</head>
+<body>
+	
+	<div class="container">
+		<div class="row">
+			<header>
+				<!--<a href="http://smarttree.co" target="_blank">--><img class="m-x-auto d-block img-fluid" src="img/logo.png" width="300"><!--</a>-->
+			</header>
+		</div>
+		<div class="row">
+			<section class="col-xs-12 col-md-12 begin">
+				<div class="row">
+				 	<h2 id="text" class="text-xs-center">Cotiza ya tu aplicación</h2>
+				 	<div class="row disaper">
+				 		<div class="col-xs-6 col-sm-6 col-md-6 m-x-auto text-xs-center " >
+						 	<div class="row precioFinal btn btn-success btn-lg btn-block m-x-auto" >
+								<div class="col-sm-6 col-form-label">Precio estimado: </div> 
+								<div class="col-sm-6 col-form-label">COP$ <span id="12900000" class="precioSuma">12.900.000</span></div>
+							</div>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-6 m-x-auto text-xs-center " >
+							<div class="row contactarAsesor  btn-primary btn btn-lg btn-block m-x-auto" >
+								<div class="col-sm-6 col-form-label">Contactar un asesor</div> 
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="icons" class="row">
+					<div class="col-xs-9 col-sm-10 col-md-3 m-x-auto main">
+						<i class="fa fa-mobile grande" aria-hidden="true"></i>
+						<!--<i class="fa fa-cog grande" aria-hidden="true"></i>
+						<i class="fa fa-cog peque pequeUno" aria-hidden="true"></i>
+						<i class="fa fa-cog peque pequeDos" aria-hidden="true"></i>-->
+					</div>
+
+					<div class="col-xs-12 col-md-12 m-x-auto first first_ desktop">
+						<div class="row">
+							<div id="android" class="col-xs-4 col-sm-4 col-md-4 m-x-auto text-xs-center selectApp">
+								<i class="fa fa-android" aria-hidden="true"></i>
+								<h4 class="">Aplicación Android</h4>
+								<input type="hidden" name="fa-android" value="3500000">
+							</div>
+							<div id="iOS" class="col-xs-4 col-sm-4 col-md-4 m-x-auto text-xs-center selectApp" >
+								<i class="fa fa-apple" aria-hidden="true"></i>
+								<h4 class="">Aplicación IOS</h4>
+								<input type="hidden" name="fa-apple" value="3500000" >
+							</div>
+							<div id="multiplataforma" class="col-xs-4 col-sm-4 col-md-4 m-x-auto text-xs-center selectApp" >
+								<i class="fa fa-puzzle-piece" aria-hidden="true"></i>
+								<h4 class="">Aplicación Multiplataforma</h4>
+								<input type="hidden" name="fa-puzzle-piece" value="4500000" >
+							</div>
+						</div>
+					</div>
+
+					<div class="col-xs-12 col-md-12 m-x-auto second second_ desktop">
+						<div class="row">
+							<div class="col-xs-4 col-sm-4 col-md-4 m-x-auto text-xs-center selectIntefaz" >
+								<i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+								<h4 class="">Interfaz sencilla</h4>
+								<input type="hidden" name="fa-pencil-square-o" value="4000000" >
+							</div>
+							<div class="col-xs-4 col-sm-4 col-md-4 m-x-auto text-xs-center selectIntefaz" >
+								<i class="fa fa-paint-brush" aria-hidden="true"></i>
+								<h4 class="">Interfaz personalizada</h4>
+								<input type="hidden" name="fa-paint-brush" value="5000000" >
+							</div>
+							<div class="col-xs-4 col-sm-4 col-md-4 m-x-auto text-xs-center selectIntefaz" >
+								<i class="fa fa-clone" aria-hidden="true"></i>
+								<h4 class="">Replica de la web</h4>
+								<input type="hidden" name="fa-clone" value="3000000" >
+							</div>
+						</div>
+					</div>
+
+					<div class="col-xs-12 col-md-12 m-x-auto third third_ desktop">
+						<div class="row">
+							<div class="col-xs-4 col-sm-4 col-md-4 m-x-auto text-xs-center selectValor" >
+								<i class="fa fa-bullhorn" aria-hidden="true"></i>
+								<h4 class="">Aplicación gratuita</h4>
+								<input type="hidden" name="fa-bullhorn" value="0" >
+							</div>
+							<div class="col-xs-4 col-sm-4 col-md-4 m-x-auto text-xs-center selectValor" >
+								<i class="fa fa-money" aria-hidden="true"></i>
+								<h4 class="">Aplicación de pago</h4>
+								<input type="hidden" name="fa-money" value="2000000" >
+							</div>
+							<div class="col-xs-4 col-sm-4 col-md-4 m-x-auto text-xs-center selectValor" >
+								<i class="fa fa-usd" aria-hidden="true"></i>
+								<h4 class="">Aplicación de compras</h4>
+								<input type="hidden" name="fa-usd" value="4000000" >
+							</div>
+						</div>
+					</div>
+
+					<div class="col-xs-12 col-md-12 m-x-auto four four_ desktop">
+						<div class="row">
+							<div class="col-xs-4 col-sm-4 col-md-4 m-x-auto text-xs-center selectLogin" >
+								<i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+								<h4 class="">Redes sociales</h4>
+								<input type="hidden" name="fa-thumbs-o-up" value="3000000" >
+							</div>
+							<div class="col-xs-4 col-sm-4 col-md-4 m-x-auto text-xs-center selectLogin" >
+								<i class="fa fa-at" aria-hidden="true"></i>
+								<h4 class="">Correo electrónico</h4>
+								<input type="hidden" name="fa-at" value="2000000" >
+							</div>
+							<div class="col-xs-4 col-sm-4 col-md-4 m-x-auto text-xs-center selectLogin" >
+								<i class="fa fa-sign-in" aria-hidden="true"></i>
+								<h4 class="">Sin login</h4>
+								<input type="hidden" name="fa-sign-in" value="0" >
+							</div>
+						</div>
+					</div>
+
+					<div class="col-xs-12 col-md-12 m-x-auto five five_ desktop">
+						<div class="row">
+							<div class="col-xs-6 col-sm-6 col-md-6 m-x-auto text-xs-center selectIntegracion" >
+								<i class="fa fa-globe" aria-hidden="true"></i>
+								<h4 class="">Integración web</h4>
+								<input type="hidden" name="fa-globe" value="5500000" >
+							</div>
+							<div class="col-xs-6 col-sm-6 col-md-6 m-x-auto text-xs-center selectIntegracion" >
+								<i class="fa fa-ban" aria-hidden="true"></i>
+								<h4 class="">Sin integración web</h4>
+								<input type="hidden" name="fa-ban" value="0" >
+							</div>
+							
+						</div>
+					</div>
+
+					<div class="col-xs-12 col-md-12 m-x-auto six six_ desktop">
+						<div class="row">
+							<div class="col-xs-6 col-sm-6 col-md-6 m-x-auto text-xs-center selectPerfiles" >
+								<i class="fa fa-user" aria-hidden="true"></i>
+								<h4 class="">Perfiles personales</h4>
+								<input type="hidden" name="fa-user" value="3500000" >
+							</div>
+							<div class="col-xs-6 col-sm-6 col-md-6 m-x-auto text-xs-center selectPerfiles" >
+								<i class="fa fa-user-times" aria-hidden="true"></i>
+								<h4 class="">Sin perfiles</h4>
+								<input type="hidden" name="fa-user-times" value="0" >
+							</div>
+							
+						</div>
+					</div>
+
+					<div class="col-xs-12 col-md-12 m-x-auto seven seven_ desktop">
+						<div class="row">
+							<div class="col-xs-6 col-sm-6 col-md-6 m-x-auto text-xs-center selectPanel" >
+								<i class="fa fa-tachometer" aria-hidden="true"></i>
+								<h4 class="">Panel de administración</h4>
+								<input type="hidden" name="fa-tachometer" value="8000000" >
+							</div>
+							<div class="col-xs-6 col-sm-6 col-md-6 m-x-auto text-xs-center selectPanel" >
+								<i class="fa fa-times" aria-hidden="true"></i>
+								<h4 class="">Sin panel de administración</h4>
+								<input type="hidden" name="fa-times" value="0" >
+							</div>
+							
+						</div>
+					</div>
+
+					<div class="col-xs-12 col-md-12 m-x-auto eigth eigth_ desktop">
+						<div class="row">
+							<div class="col-xs-6 col-sm-6 col-md-6 m-x-auto text-xs-center selectIdioma" >
+								<i class="fa fa-comment-o" aria-hidden="true"></i>
+								<h4 class="">Un solo idioma</h4>
+								<input type="hidden" name="fa-comment-o" value="0" >
+							</div>
+							<div class="col-xs-6 col-sm-6 col-md-6 m-x-auto text-xs-center selectIdioma" >
+								<i class="fa fa-comments-o" aria-hidden="true"></i>
+								<h4 class="">Multilenguaje</h4>
+								<input type="hidden" name="fa-comments-o" value="8000000" >
+							</div>
+							
+						</div>
+					</div>
+
+					<div class="col-xs-12 col-md-12 m-x-auto menu desktop">
+						<div class="row">
+							<div id="selectApp" smtt="first" class="col-xs-3 col-sm-4 col-md-3 m-x-auto text-xs-center selected" >
+								<i class="fa " aria-hidden="true"></i>
+								<h4 class=""></h4>
+								<input type="hidden" name="fa-comment-o" value="0" >
+							</div>
+							<div id="selectIntefaz" smtt="second" class="col-xs-3 col-sm-4 col-md-3 m-x-auto text-xs-center selected" >
+								<i class="fa " aria-hidden="true"></i>
+								<h4 class=""></h4>
+								<input type="hidden" name="fa-comments-o" value="8000000">
+							</div>
+							<div id="selectValor" smtt="third" class="col-xs-3 col-sm-4 col-md-3 m-x-auto text-xs-center selected" >
+								<i class="fa " aria-hidden="true"></i>
+								<h4 class=""></h4>
+								<input type="hidden" name="fa-comment-o" value="0" >
+							</div>
+							<div id="selectLogin" smtt="four" class="col-xs-3 col-sm-4 col-md-3 m-x-auto text-xs-center selected" >
+								<i class="fa " aria-hidden="true"></i>
+								<h4 class=""></h4>
+								<input type="hidden" name="fa-comments-o" value="8000000">
+							</div>
+							<div id="selectIntegracion" smtt="four" class="col-xs-3 col-sm-4 col-md-3 m-x-auto text-xs-center selected" >
+								<i class="fa " aria-hidden="true"></i>
+								<h4 class=""></h4>
+								<input type="hidden" name="fa-comment-o" value="0" >
+							</div>
+							<div id="selectPerfiles" smtt="five" class="col-xs-3 col-sm-4 col-md-3 m-x-auto text-xs-center selected" >
+								<i class="fa " aria-hidden="true"></i>
+								<h4 class=""></h4>
+								<input type="hidden" name="fa-comments-o" value="8000000">
+							</div>
+							<div id="selectPanel" smtt="six" class="col-xs-3 col-sm-4 col-md-3 m-x-auto text-xs-center selected" >
+								<i class="fa " aria-hidden="true"></i>
+								<h4 class=""></h4>
+								<input type="hidden" name="fa-comment-o" value="0" >
+							</div>
+							<div id="selectIdioma" smtt="seven" class="col-xs-3 col-sm-4 col-md-3 m-x-auto text-xs-center selected" >
+								<i class="fa " aria-hidden="true"></i>
+								<h4 class=""></h4>
+								<input type="hidden" name="fa-comments-o" value="8000000">
+							</div>
+							
+						</div>
+					</div>
+
+				</div>
+			</section>
+			
+		</div>
+		<footer>
+			<div class="row">
+				<div class="m-x-auto btn-ini">
+					<button id="start" type="button" class="btn btn-primary btn-lg btn-block m-x-auto">¡Comenzar!</button>
+					
+				</div>
+			</div>
+
+			<div class="row precioCaja btn btn-success btn-lg btn-block m-x-auto" >
+				<div class="col-sm-6 col-form-label">Precio estimado: </div> 
+				<div class="col-sm-6 col-form-label">COP$ <span id="12900000" class="precioSuma">12.900.000</span></div>
+			</div>
+		</footer>
+
+	</div>
+	
+
+</body>
+</html>

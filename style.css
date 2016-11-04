@@ -1,0 +1,171 @@
+body{
+	background-color: #ededed;
+    background-image: url("img/fondo.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size:  auto;
+}
+
+header{
+	margin-top: 10px
+}
+
+.btn-ini{
+	width: 50%;
+	text-transform: uppercase;
+}
+
+#start{
+	display: block;
+	width: 50%
+}
+
+#text{
+	margin: 20px 0;
+	padding-top: 20px;
+	font-size: 1.5rem;
+}
+
+#icons{
+	font-size: 16em;
+	position: relative;
+}
+
+#icons .desktop{
+	font-size: 10rem;
+}
+
+#icons .fa-cog{
+	font-size: 160px;
+}
+
+#icons .main{
+	float: none;
+}
+
+#icons .fa-cog{
+	position: absolute;
+}
+
+#icons .fa-cog.peque{
+	font-size: 90px;
+}
+
+#icons .grande{
+	display: block;
+    font-size: 23rem;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    text-align: center;
+}
+
+#icons .fa-cog.peque.pequeUno, #icons .fa-cog.peque.pequeDos{
+	top: 210px;
+}
+
+#icons .fa-cog.peque.pequeUno{
+	right: 80px;
+}
+
+#icons .fa-cog.peque.pequeDos{
+	right: 0px;
+}
+
+.desktop{display: none;}
+
+footer{
+	margin-top: 40px;
+    position: relative;
+    z-index: 999; 
+}
+
+.selectApp, .selectIntefaz, .selectValor, .selectLogin, .selectIntegracion, .selectPerfiles, .selectPanel, .selectIdioma, .menu{
+	cursor: pointer;
+}
+
+.contactarAsesor{
+	width: 45%;
+}
+
+.precioFinal{
+	width: 70%
+}
+
+.precioCaja{
+	margin-top: 40px;
+	width: 35%;
+	display: none;
+
+}
+
+.precioCaja input{
+	background-color: transparent;
+    border: medium none;
+    color: #fff;
+}
+
+.disaper{
+	display: none
+}
+
+.menu div{
+	cursor: default;
+}
+.menu .selected{
+	height: 300px;
+}
+
+.volverAtras{
+	background-color: #A5CD39;
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer !important;
+    font-size: 40px;
+    height: 60px;
+    position: absolute;
+    right: 0;
+    top: 10px;
+    width: 60px;
+}
+
+/*background-color: #fff;
+    border: 5px solid #999999;
+    border-radius: 20px;
+    box-shadow: 0 4px 7px #666;
+    display: block;
+    padding: 60px;
+    position: absolute;
+    z-index: 99;*/
+
+/*Responsive*/
+
+@media (max-width: 544px) {
+	#start{
+		width: 80%
+	}
+
+	.precioCaja{
+		width: 100%;
+
+	}
+
+	#icons .desktop{
+    	font-size: 5rem;
+	}
+
+	.desktop h4{
+		font-size: 10px;
+	}
+}
+
+@media (min-width: 768px) {
+	
+}
+
+@media (min-width: 992px) {
+
+}
+
+@media (min-width: 1200px) {
+}
