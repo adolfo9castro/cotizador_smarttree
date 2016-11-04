@@ -62,6 +62,8 @@ jQuery(document).ready(function($){
 
 		$("#selectApp h4").html(selectApp.id);
 
+		$("#selectApp input").val(selectAppVal);
+
 		$(".first_").removeClass("first_");
 
 		if ($(".first").hasClass(("closeFirst"))){
@@ -97,11 +99,21 @@ jQuery(document).ready(function($){
 
 		$(".precioCaja .precioSuma").text(precioSuma);
 
-		$("#selectIntefaz i").addClass(selectApp.nombre);
+		$("#selectIntefaz i").removeClass();
+
+		$("#selectIntefaz i").addClass("fa "+selectApp.nombre);
 
 		$("#selectIntefaz h4").html(selectApp.id);
 
+		$("#selectIntefaz input").val(selectAppVal);
+
 		$(".second_").removeClass("second_");
+
+		if ($(".second").hasClass(("closesecond"))){
+			$(".second").hide();
+		}
+
+		$(".second").addClass("closesecond");
 
 	});
 
@@ -130,9 +142,21 @@ jQuery(document).ready(function($){
 
 		$("#selectValor i").addClass(selectApp.nombre);
 
+		$("#selectValor i").removeClass();
+
+		$("#selectValor i").addClass("fa "+selectApp.nombre);
+
 		$("#selectValor h4").html(selectApp.id);
 
+		$("#selectValor input").val(selectAppVal);
+
 		$(".third_").removeClass("third_");
+
+		if ($(".third").hasClass(("closethird"))){
+			$(".third").hide();
+		}
+
+		$(".third").addClass("closethird");
 
 	});
 
@@ -161,9 +185,21 @@ jQuery(document).ready(function($){
 
 		$("#selectLogin i").addClass(selectApp.nombre);
 
+		$("#selectLogin i").removeClass();
+
+		$("#selectLogin i").addClass("fa "+selectApp.nombre);
+
+		$("#selectLogin input").val(selectAppVal);
+
 		$("#selectLogin h4").html(selectApp.id);
 
 		$(".four_").removeClass("four_");
+
+		if ($(".four").hasClass(("closefour"))){
+			$(".four").hide();
+		}
+
+		$(".four").addClass("closefour");
 
 	});
 
@@ -191,9 +227,21 @@ jQuery(document).ready(function($){
 
 		$("#selectIntegracion i").addClass(selectApp.nombre);
 
+		$("#selectIntegracion i").removeClass();
+
+		$("#selectIntegracion i").addClass("fa "+selectApp.nombre);
+
 		$("#selectIntegracion h4").html(selectApp.id);
 
+		$("#selectIntegracion input").val(selectAppVal);
+
 		$(".five_").removeClass("five_");
+
+		if ($(".five").hasClass(("closefive"))){
+			$(".five").hide();
+		}
+
+		$(".five").addClass("closefive");
 
 	});
 
@@ -222,9 +270,21 @@ jQuery(document).ready(function($){
 
 		$("#selectPerfiles i").addClass(selectApp.nombre);
 
+		$("#selectPerfiles i").removeClass();
+
+		$("#selectPerfiles i").addClass("fa "+selectApp.nombre);
+
 		$("#selectPerfiles h4").html(selectApp.id);
 
+		$("#selectPerfiles input").val(selectAppVal);
+
 		$(".six_").removeClass("six_");
+
+		if ($(".six").hasClass(("closesix"))){
+			$(".six").hide();
+		}
+
+		$(".six").addClass("closesix");
 
 	});
 
@@ -253,9 +313,21 @@ jQuery(document).ready(function($){
 
 		$("#selectPanel i").addClass(selectApp.nombre);
 
+		$("#selectPanel i").removeClass();
+
+		$("#selectPanel i").addClass("fa "+selectApp.nombre);
+
 		$("#selectPanel h4").html(selectApp.id);
 
+		$("#selectPanel input").val(selectAppVal);
+
 		$(".seven_").removeClass("seven_");
+
+		if ($(".seven").hasClass(("closeseven"))){
+			$(".seven").hide();
+		}
+
+		$(".seven").addClass("closeseven");
 
 	});
 
@@ -285,11 +357,27 @@ jQuery(document).ready(function($){
 
 		$(".disaper .precioFinal .precioSuma").text(precioSuma);
 
+		$(".disaper .precioFinal .precioSuma").attr("id", precioSuma);
+
 		$("#selectIdioma i").addClass(selectApp.nombre);
+
+		$("#selectIdioma i").removeClass();
+
+		$("#selectIdioma i").addClass("fa "+selectApp.nombre);
 
 		$("#selectIdioma h4").html(selectApp.id);
 
+		$("#selectIdioma input").val(selectAppVal);
+
 		$(".eigth_").removeClass("eigth_");
+
+		if ($(".eigth").hasClass(("closeeigth"))){
+			$(".eigth").hide();
+		}
+
+		$(".eigth").addClass("closeeigth");
+
+		$("#text").removeAttr("id");
 
 	});
 
