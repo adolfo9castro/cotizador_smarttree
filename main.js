@@ -48,11 +48,15 @@ jQuery(document).ready(function($){
 
 		selectApp.precio = parseInt(selectApp.precio);
 
-		precioSuma = precioSuma + selectApp.precio;
+		if (!$(".first").hasClass(("closeFirst"))) {
+			precioSuma = precioSuma + selectApp.precio;	
+		}
 
 		$(".precioCaja .precioSuma").attr("id", precioSuma);
 		
 		precioSuma = formatNumber.new(precioSuma);
+
+		var recalcularPrecio = $(".menu #selectApp input").val();//Precio a tomar del valor a cambiar
 
 		$(".precioCaja .precioSuma").text(precioSuma);
 
@@ -68,10 +72,28 @@ jQuery(document).ready(function($){
 
 		if ($(".first").hasClass(("closeFirst"))){
 			$(".first").hide();
+
+			var precioCambiar = $(".disaper .precioFinal span.precioSuma").attr("id");//Precio de la caja final.
+
+			var tmpValor = precioCambiar - recalcularPrecio;
+
+			var precioFinal = tmpValor + selectApp.precio;
+
+			$(".disaper .precioFinal span.precioSuma").attr("id", precioFinal)
+
+			precioFinal = formatNumber.new(precioFinal);
+
+			$(".disaper .precioFinal span.precioSuma").text(precioFinal);
+
+			$(".precioFinal").addClass("cambioColor");
+
+			setTimeout(function(){
+				$(".precioFinal").removeClass("cambioColor");
+			}, 500)
+			
 		}
 
 		$(".first").addClass("closeFirst");
-
 		
 	});
 
@@ -91,11 +113,15 @@ jQuery(document).ready(function($){
 
 		selectApp.precio = parseInt(selectApp.precio);
 
-		precioSuma = precioSuma + selectApp.precio;
+		if (!$(".second").hasClass(("closesecond"))) {
+			precioSuma = precioSuma + selectApp.precio;	
+		}
 
 		$(".precioCaja .precioSuma").attr("id", precioSuma);
 		
 		precioSuma = formatNumber.new(precioSuma);
+
+		var recalcularPrecio = $(".menu #selectIntefaz input").val();//Precio a tomar del valor a cambiar
 
 		$(".precioCaja .precioSuma").text(precioSuma);
 
@@ -111,6 +137,23 @@ jQuery(document).ready(function($){
 
 		if ($(".second").hasClass(("closesecond"))){
 			$(".second").hide();
+			var precioCambiar = $(".disaper .precioFinal span.precioSuma").attr("id");//Precio de la caja final.
+
+			var tmpValor = precioCambiar - recalcularPrecio;
+
+			var precioFinal = tmpValor + selectApp.precio;
+
+			$(".disaper .precioFinal span.precioSuma").attr("id", precioFinal)
+
+			precioFinal = formatNumber.new(precioFinal);
+
+			$(".disaper .precioFinal span.precioSuma").text(precioFinal);
+
+			$(".precioFinal").addClass("cambioColor");
+
+			setTimeout(function(){
+				$(".precioFinal").removeClass("cambioColor");
+			}, 500)
 		}
 
 		$(".second").addClass("closesecond");
@@ -132,11 +175,15 @@ jQuery(document).ready(function($){
 
 		selectApp.precio = parseInt(selectApp.precio);
 
-		precioSuma = precioSuma + selectApp.precio;
+		if (!$(".third").hasClass(("closethird"))) {
+			precioSuma = precioSuma + selectApp.precio;	
+		}
 
 		$(".precioCaja .precioSuma").attr("id", precioSuma);
 		
 		precioSuma = formatNumber.new(precioSuma);
+
+		var recalcularPrecio = $(".menu #selectValor input").val();//Precio a tomar del valor a cambiar
 
 		$(".precioCaja .precioSuma").text(precioSuma);
 
@@ -154,6 +201,24 @@ jQuery(document).ready(function($){
 
 		if ($(".third").hasClass(("closethird"))){
 			$(".third").hide();
+
+			var precioCambiar = $(".disaper .precioFinal span.precioSuma").attr("id");//Precio de la caja final.
+
+			var tmpValor = precioCambiar - recalcularPrecio;
+
+			var precioFinal = tmpValor + selectApp.precio;
+
+			$(".disaper .precioFinal span.precioSuma").attr("id", precioFinal)
+
+			precioFinal = formatNumber.new(precioFinal);
+
+			$(".disaper .precioFinal span.precioSuma").text(precioFinal);
+
+			$(".precioFinal").addClass("cambioColor");
+
+			setTimeout(function(){
+				$(".precioFinal").removeClass("cambioColor");
+			}, 500)
 		}
 
 		$(".third").addClass("closethird");
@@ -175,11 +240,15 @@ jQuery(document).ready(function($){
 
 		selectApp.precio = parseInt(selectApp.precio);
 
-		precioSuma = precioSuma + selectApp.precio;
+		if (!$(".four").hasClass(("closefour"))) {
+			precioSuma = precioSuma + selectApp.precio;	
+		}
 
 		$(".precioCaja .precioSuma").attr("id", precioSuma);
 		
 		precioSuma = formatNumber.new(precioSuma);
+
+		var recalcularPrecio = $(".menu #selectLogin input").val();//Precio a tomar del valor a cambiar
 
 		$(".precioCaja .precioSuma").text(precioSuma);
 
@@ -197,6 +266,24 @@ jQuery(document).ready(function($){
 
 		if ($(".four").hasClass(("closefour"))){
 			$(".four").hide();
+
+			var precioCambiar = $(".disaper .precioFinal span.precioSuma").attr("id");//Precio de la caja final.
+
+			var tmpValor = precioCambiar - recalcularPrecio;
+
+			var precioFinal = tmpValor + selectApp.precio;
+
+			$(".disaper .precioFinal span.precioSuma").attr("id", precioFinal)
+
+			precioFinal = formatNumber.new(precioFinal);
+
+			$(".disaper .precioFinal span.precioSuma").text(precioFinal);
+
+			$(".precioFinal").addClass("cambioColor");
+
+			setTimeout(function(){
+				$(".precioFinal").removeClass("cambioColor");
+			}, 500)
 		}
 
 		$(".four").addClass("closefour");
@@ -211,17 +298,22 @@ jQuery(document).ready(function($){
 		$(".five_").hide();
 		$(".six_").fadeIn("slow");
 		$("#text").html("¿Los usuarios tienen sus propios perfiles?");
+		
 		selectApp = {precio: selectAppVal, nombre: selectAppName, id: selectAppId}
 
 		precioSuma = parseInt(precioSuma);
 
 		selectApp.precio = parseInt(selectApp.precio);
 
-		precioSuma = precioSuma + selectApp.precio;
+		if (!$(".five").hasClass(("closefive"))) {
+			precioSuma = precioSuma + selectApp.precio;	
+		}
 
 		$(".precioCaja .precioSuma").attr("id", precioSuma);
-		
+
 		precioSuma = formatNumber.new(precioSuma);
+
+		var recalcularPrecio = $(".menu #selectIntegracion input").val();//Precio a tomar del valor a cambiar
 
 		$(".precioCaja .precioSuma").text(precioSuma);
 
@@ -239,6 +331,24 @@ jQuery(document).ready(function($){
 
 		if ($(".five").hasClass(("closefive"))){
 			$(".five").hide();
+
+			var precioCambiar = $(".disaper .precioFinal span.precioSuma").attr("id");//Precio de la caja final.
+
+			var tmpValor = precioCambiar - recalcularPrecio;
+
+			var precioFinal = tmpValor + selectApp.precio;
+
+			$(".disaper .precioFinal span.precioSuma").attr("id", precioFinal)
+
+			precioFinal = formatNumber.new(precioFinal);
+
+			$(".disaper .precioFinal span.precioSuma").text(precioFinal);
+
+			$(".precioFinal").addClass("cambioColor");
+
+			setTimeout(function(){
+				$(".precioFinal").removeClass("cambioColor");
+			}, 500)
 		}
 
 		$(".five").addClass("closefive");
@@ -260,11 +370,15 @@ jQuery(document).ready(function($){
 
 		selectApp.precio = parseInt(selectApp.precio);
 
-		precioSuma = precioSuma + selectApp.precio;
+		if (!$(".six").hasClass(("closesix"))) {
+			precioSuma = precioSuma + selectApp.precio;	
+		}
 
 		$(".precioCaja .precioSuma").attr("id", precioSuma);
 		
 		precioSuma = formatNumber.new(precioSuma);
+
+		var recalcularPrecio = $(".menu #selectPerfiles input").val();//Precio a tomar del valor a cambiar
 
 		$(".precioCaja .precioSuma").text(precioSuma);
 
@@ -282,6 +396,24 @@ jQuery(document).ready(function($){
 
 		if ($(".six").hasClass(("closesix"))){
 			$(".six").hide();
+
+			var precioCambiar = $(".disaper .precioFinal span.precioSuma").attr("id");//Precio de la caja final.
+
+			var tmpValor = precioCambiar - recalcularPrecio;
+
+			var precioFinal = tmpValor + selectApp.precio;
+
+			$(".disaper .precioFinal span.precioSuma").attr("id", precioFinal)
+
+			precioFinal = formatNumber.new(precioFinal);
+
+			$(".disaper .precioFinal span.precioSuma").text(precioFinal);
+
+			$(".precioFinal").addClass("cambioColor");
+
+			setTimeout(function(){
+				$(".precioFinal").removeClass("cambioColor");
+			}, 500)
 		}
 
 		$(".six").addClass("closesix");
@@ -303,11 +435,15 @@ jQuery(document).ready(function($){
 
 		selectApp.precio = parseInt(selectApp.precio);
 
-		precioSuma = precioSuma + selectApp.precio;
+		if (!$(".seven").hasClass(("closeseven"))) {
+			precioSuma = precioSuma + selectApp.precio;	
+		}
 
 		$(".precioCaja .precioSuma").attr("id", precioSuma);
 		
 		precioSuma = formatNumber.new(precioSuma);
+
+		var recalcularPrecio = $(".menu #selectPanel input").val();//Precio a tomar del valor a cambiar
 
 		$(".precioCaja .precioSuma").text(precioSuma);
 
@@ -325,6 +461,24 @@ jQuery(document).ready(function($){
 
 		if ($(".seven").hasClass(("closeseven"))){
 			$(".seven").hide();
+
+			var precioCambiar = $(".disaper .precioFinal span.precioSuma").attr("id");//Precio de la caja final.
+
+			var tmpValor = precioCambiar - recalcularPrecio;
+
+			var precioFinal = tmpValor + selectApp.precio;
+
+			$(".disaper .precioFinal span.precioSuma").attr("id", precioFinal)
+
+			precioFinal = formatNumber.new(precioFinal);
+
+			$(".disaper .precioFinal span.precioSuma").text(precioFinal);
+
+			$(".precioFinal").addClass("cambioColor");
+
+			setTimeout(function(){
+				$(".precioFinal").removeClass("cambioColor");
+			}, 500)
 		}
 
 		$(".seven").addClass("closeseven");
@@ -349,15 +503,19 @@ jQuery(document).ready(function($){
 
 		selectApp.precio = parseInt(selectApp.precio);
 
-		precioSuma = precioSuma + selectApp.precio;
+		if (!$(".eigth").hasClass(("closeeigth"))) {
+			precioSuma = precioSuma + selectApp.precio;	
+		}
 
 		$(".precioCaja .precioSuma").attr("id", precioSuma);
+
+		$(".disaper .precioFinal .precioSuma").attr("id", precioSuma);
 		
 		precioSuma = formatNumber.new(precioSuma);
 
-		$(".disaper .precioFinal .precioSuma").text(precioSuma);
+		var recalcularPrecio = $(".menu #selectIdioma input").val();//Precio a tomar del valor a cambiar
 
-		$(".disaper .precioFinal .precioSuma").attr("id", precioSuma);
+		$(".disaper .precioFinal .precioSuma").text(precioSuma);
 
 		$("#selectIdioma i").addClass(selectApp.nombre);
 
@@ -373,6 +531,24 @@ jQuery(document).ready(function($){
 
 		if ($(".eigth").hasClass(("closeeigth"))){
 			$(".eigth").hide();
+
+			var precioCambiar = $(".disaper .precioFinal span.precioSuma").attr("id");//Precio de la caja final.
+
+			var tmpValor = precioCambiar - recalcularPrecio;
+
+			var precioFinal = tmpValor + selectApp.precio;
+
+			$(".disaper .precioFinal span.precioSuma").attr("id", precioFinal)
+
+			precioFinal = formatNumber.new(precioFinal);
+
+			$(".disaper .precioFinal span.precioSuma").text(precioFinal);
+
+			$(".precioFinal").addClass("cambioColor");
+
+			setTimeout(function(){
+				$(".precioFinal").removeClass("cambioColor");
+			}, 500)
 		}
 
 		$(".eigth").addClass("closeeigth");
@@ -400,7 +576,6 @@ jQuery(document).ready(function($){
 
 								});
 			$("."+grandParent).removeClass(grandParent+"_");
-			console.log(grandParent)
 			
 		})
 	});

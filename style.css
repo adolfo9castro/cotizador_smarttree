@@ -88,8 +88,14 @@ footer{
 	width: 45%;
 }
 
+.cambioColor{
+	box-shadow: -2px 3px 4px 2px #bcbcbc;
+	background-color: #449D44
+}
+
 .precioFinal{
-	width: 70%
+	width: 70%;
+	transition: all 0.4s ease 0.1s;
 }
 
 .precioCaja{
